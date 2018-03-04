@@ -1,0 +1,23 @@
+<script>
+    var number = Number(prompt("Enter number to check: "));
+    var isPrime = true;
+    if (number > 1) {
+        for (var start = 2; start < number; start++) {
+            var check = number % start;
+            if (check == 0) {
+                isPrime = false;
+                break;
+            }
+        }
+    } else {
+        isPrime = false;
+    }
+
+    if (isPrime) {
+        alert(number + " is prime.");
+    } else {
+        alert(number + " is not prime.");
+    }
+
+
+</script>
