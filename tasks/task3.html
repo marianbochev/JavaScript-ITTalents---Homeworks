@@ -1,0 +1,12 @@
+<script>
+    var firstNumber = Number(prompt("A"));
+    var secondNumber = Number(prompt("B"));
+    var result = "";
+    for (var start = firstNumber; start <= secondNumber; start++) {
+        if (start % 3 == 0) {
+            result+= start +", ";
+        }
+    }
+    alert(result.slice(0,-2));
+
+</script>
